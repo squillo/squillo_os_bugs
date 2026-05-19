@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a problem in Squillo OS
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check for an existing issue before filing a new bug report.
+  - type: input
+    id: squillo_os_version
+    attributes:
+      label: Squillo OS version
+      description: Which version of Squillo OS are you using?
+      placeholder: "e.g. 1.2.3"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device / hardware
+      description: What device, model, or hardware are you using?
+      placeholder: "e.g. SquilloBook 14, Rev B"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the problem.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Reproducibility
+      description: Does this happen every time, or only sometimes?
+      placeholder: "e.g. Happens every time after reboot"
+    validations:
+      required: true
+  - type: textarea
+    id: recent_changes
+    attributes:
+      label: Recent changes
+      description: Were there any recent updates, installs, or configuration changes before the bug started?
+      placeholder: "e.g. Installed update 1.2.3 yesterday"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, or additional details
+      description: Add any supporting details that may help investigate the issue.
+

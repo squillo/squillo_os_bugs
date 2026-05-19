@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Squillo OS bug filing guide
+    url: https://github.com/squillo/squillo_os_bugs#readme
+    about: Read the README for guidance on what information to include in an issue.
